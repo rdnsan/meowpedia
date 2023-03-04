@@ -10,7 +10,8 @@
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/core",
-        "outputPath": "dist/apps/core"
+        "outputPath": "dist/apps/core",
+        "postcssConfig": "apps/core/postcss.config.js"
       },
       "configurations": {
         "development": {

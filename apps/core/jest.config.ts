@@ -1,11 +1,14 @@
-/* eslint-disable */
-export default {
-  displayName: 'core',
-  preset: '../../jest.preset.js',
+import type { Config } from "jest";
+
+const jestConfig: Config = {
+  displayName: "core",
+  preset: "../../jest.preset.js",
   transform: {
-    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
-    '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/next/babel'] }],
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "@nrwl/react/plugins/jest",
+    "^.+\\.[tj]sx?$": ["babel-jest", { presets: ["@nrwl/next/babel"] }],
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/core',
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
+  coverageDirectory: "../../coverage/apps/core",
 };
+
+export default jestConfig;
